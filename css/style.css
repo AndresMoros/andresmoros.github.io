@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
     border:none;
     text-decoration: none;
-    
 }
 
 body, html {
@@ -15,44 +14,53 @@ body, html {
 }
 
 header {
+    position: relative;
     margin-bottom: 30px;
     padding: 15px;
     background: #1b2025;
+    height: 82px;
+}
+
+header div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
 .header-img {
     display: inline-block;
     width: 50px;
-    margin: 0;
+    position: absolute;
+    margin-bottom: 15px;
 }
 
 .header-ul {
     display: inline-block;
-    margin-left: 30px;
 }
 
 .header-ul__li {
     cursor: pointer;
     display: inline-block;
     color: #fff;
+    width: 90px;
     transition: 0.25s;
     padding: 8px 16px;
     border: 1px solid #ffffff;
-    position: relative;
-    bottom: 18.50px;
+    transition: 0.85s;
+    margin-right: 10px;
 }
 
 .header-ul__li:hover {
     border-color: #088f6d;
     position: relative;
-    bottom: 17px;
+    top: 1px;
 }
 
 ul img {
     width: 25px;
     position: relative;
-    bottom: 11px;
-    left: 7px;
+    top: 11px;
 }
 
 form {
@@ -86,6 +94,10 @@ form {
     border: 1px solid #fff;
     border-radius: 24px;
     transition: 0.25s;
+}
+
+.mail-pass::placeholder {
+    color: #088f6d;
 }
 
 .mail-pass:hover {
@@ -122,7 +134,7 @@ form div {
     font-size: 9px;
     color: #fff;
     padding: 10px 15px;
-    margin: 10px;
+    margin: 20px 0px;
     outline: none;
     background: none;
     border: 1px solid #fff;
