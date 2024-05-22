@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>InmoConexión</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="assets/logo.png" alt=""> 
+                <!-- sé que el logo se ve feo pero es que lo hice con IA y no sé por qué salió así -->
+            </div>
+            <div class="name-container">
+                <p>InmoConexión</p>
+            </div>
+            <div class="nav-container">
+                <ul class="ul-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="for-buy.html"><i class="fa-solid fa-cart-shopping"></i> Compra</a></li>
+                    <li><a href="for-sale.html"><i class="fa-solid fa-tag"></i> Vende</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-content for-sale-content">
+            <h1>¿Tienes una propiedad que desees vender/alquilar?</h1>
+            <p>
+                Llena el formulario a continuación, y un asesor se pondrá en contacto contigo
+                lo antes posible.
+            </p>
+            <form action="" class="form">
+                <fieldset>
+                    <legend>Datos del cliente</legend>
+                    <div class="form-row">
+                        <label for="name" class="form-lbl">Nombre completo:*</label>
+                        <input type="text" name="nombre" id="name" class="large-input" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone" class="form-lbl">Teléfono:*</label>
+                        <input type="tel" name="telefono" id="phone" class="mid-input" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="form-lbl">Correo electrónico:</label>
+                        <input type="email" name="telefono" id="email" class="mid-input">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del inmueble</legend>
+                    <div class="form-row">
+                        <label for="" class="form-lbl">Tipo de inmueble:*</label>
+                        <div class="radio-check-container">
+                            <div>
+                                <input type="radio" name="type" id="" value="casa" checked> Casa
+                            </div>
+                            <div>
+                                <input type="radio" name="type" id="" value="apartamento"> Apartamento
+                            </div>
+                            <div>
+                                <input type="radio" name="type" id="" value="edificio"> Edificio
+                            </div>
+                            <div>
+                                <input type="radio" name="type" id="" value="oficina"> Oficina
+                            </div>
+                            <div>
+                                <input type="radio" name="type" id="" value="otro"> Otro
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="direction" class="form-lbl">Dirección del inmueble:*</label>
+                            <input type="text" name="direccion" id="direction" class="large-input dir">
+                    </div>
+                    <div class="form-row">
+                        <label for="postal" class="form-lbl">Código Postal:*</label>
+                        <input type="number" name="codigo-postal" id="postal" class="short-input">
+                    </div>
+                    <div class="form-row">
+                        <label for="" class="form-lbl">Detalles del inmueble</label>
+                        <div class="radio-check-container">
+                            <div>
+                                <input type="checkbox" name="patio" id="" value="patio"> Patio
+                            </div>
+                            <div>
+                                <input type="checkbox" name="estacionamiento" id="" value="estacionamiento"> Estacionamiento
+                            </div>
+                            <div>
+                                <input type="checkbox" name="electromesticos" id="" value="electromesticos"> Electrodomésticos
+                            </div>
+                            <div>
+                                <input type="checkbox" name="terminado" id="" value="terminado"> Obra terminada
+                            </div>
+                            <div>
+                                <input type="checkbox" name="almacen" id="" value="almacen"> Almacén
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="description" class="form-lbl">Describe tu inmueble:</label>
+                        <br>
+                        <textarea name="" id="description"></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-row">
+                    <label for="conditions" class="form-lbl">Politicas de Privacidad *</label>
+                    <div class="radio-check-container">
+                        <div>
+                            <input type="checkbox" name="patio" id="" value="patio" required>
+                            <b>ACEPTO</b> las políticas de privacidad y tratamiento de datos personales
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <p>Los datos con <b>*</b> son de caracter obligatorio.</p>
+                    <div class="submit-reset-container">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Cancelar">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="aside-content">
+            <aside>
+                <div class="about-us">
+                    <div class="about-us-pic img-box"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, impedit expedita suscipit nisi repellendus itaque quas! 
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, perferendis eum architecto voluptatem voluptates exercitationem corporis iure? Officia, eveniet dolorem eligendi praesentium consequatur labore amet error optio dolore velit libero.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis. Laborum placeat sit sequi similique quasi dicta illo ad saepe ipsam earum sapiente enim, quia quis numquam adipisci, rem voluptatibus.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <i class="fa-regular fa-copyright"></i>
+            2024 InmoConexión. Desarrollado por Andrés Moros.
+        </p>
+    </footer>
+  </body>
+</html>

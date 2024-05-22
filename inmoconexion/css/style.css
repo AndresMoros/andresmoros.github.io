@@ -1,0 +1,654 @@
+/* ------------------------ ESTILOS GENERALES ------------------------ */
+:root {
+    /* FONTS */
+    --brand-font: 'Josefin Sans';
+    --main-font: 'Ubuntu';
+    --secundary-font: 'Dosis';
+    /* COLORS */
+    --main-color: #153448;
+    --secundary-color: #3C5B6F;
+    --red-color: #a65757;
+    --green-color: #60a657;
+    --brown-color: #948979;
+    --beige-color: #DFD0B8;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--main-font);
+}
+p,
+a,
+li {
+    font-family: var(--secundary-font);
+}
+main,
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header,
+footer {
+    background: var(--main-color);
+}
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ------------------------ ESTILOS CABECERA ------------------------ */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: .625rem;
+    gap: .625rem;
+}
+.logo-container {
+    height: 5rem;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container img {
+    height: 80px;
+}
+.name-container {
+    width: 40%;
+    font-family: var(--brand-font);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+}
+/* ------------------------ ESTILOS BARRA DE NAVEGACION ------------------------ */
+.nav-container {
+    width: 39%;
+}
+.ul-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ul-nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--brand-font);
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+    overflow: hidden;
+}
+.ul-nav li a:hover{
+    background: var(--secundary-color);
+}
+.ul-nav li a i {
+    font-size: 0;
+    position: relative;
+    top: -30px;
+    transition: all .3s ease-out;
+}
+.ul-nav li:nth-child(2) a:hover,
+.ul-nav li:nth-child(3) a:hover {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.ul-nav li:nth-child(2) a:hover i,
+.ul-nav li:nth-child(3) a:hover i{
+    font-size: 1.2rem;
+    top: 0;
+}
+.ul-nav li:nth-child(2) a:hover {
+    background: var(--green-color);
+}
+.ul-nav li:nth-child(3) a:hover{
+    background: var(--red-color);
+}
+/* ------------------------ ESTILOS PARA CONTENIDO ------------------------ */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: .35rem;
+    margin-top: .35rem;
+    min-height: calc(100vh - 5vh);
+}
+.hero {
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ------------------------ INDEX ------------------------ */
+.main-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.index-slogan {
+    display: flex; /*este flex será usado más tarde*/
+    background-image: url(../assets/slogan-index.jpg);
+}
+.hero h1 {
+    font-size: 2.5rem;
+    width: 100%;
+    height: 500px;
+    padding: 12rem 0 0 5rem;
+    background: #153448;
+    background: linear-gradient(90deg, #153448 0%, #090979a3 25%, #00d4ff00 100%);
+    color: #fff;
+}
+.hero h1 span {
+    font-size: 1.4rem;
+    position: relative;
+    top: -.8rem;
+    color: var(--beige-color);
+}
+.action-call {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+/* ------------------------ ESTRUCTURE ------------------------ */
+.action-call-row {
+    width: 100%;
+    display: flex;
+}
+.action-call-column-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.action-call-column-2 {
+    width: 30%;
+}
+.week-new-cover {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1.25rem;
+}
+.week-new-pic {
+    height: 150px;
+    width: 40%;
+    background-image: url(../assets/new-pic.jpg); /* IMAGE FOR NEW*/
+    border: 5px groove var(--secundary-color);
+}
+.week-new-title {
+    width: 50%;
+}
+.week-new-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    padding: .625rem;
+}
+.week-new-info p {
+    line-height: 1.5rem;
+}
+.promotion h2{
+ text-align: center;   
+}
+.promotion ul {
+    list-style: none;
+    width: 90%;
+    margin: 20px auto;
+}
+.promotion ul li {
+    margin-bottom: .625rem;
+}
+.promotion ul li i {
+    color: var(--green-color);
+}
+.promotion ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+.aside-content {
+    width: 29%;
+    padding-right: 5px;
+    background: var(--secundary-color);
+}
+.about-us {
+    background: var(--secundary-color);
+    color: #fff;
+    padding: .625rem;
+}
+.about-us-pic {
+    margin: .625rem auto;
+    width: 70%;
+    height: 10rem;
+    background-image: url(../assets/local-inmobiliaria.jpg);
+    border: 5px solid var(--beige-color);
+}
+.about-us p {
+    margin-bottom: .625rem;
+}
+/* ------------------------ FOR SALE STYLES ------------------------ */
+.form {
+    font-family: var(--secundary-font);
+    width: 80%;
+    margin: 1.25rem auto;
+}
+.form fieldset {
+    border: none;
+}
+.form fieldset legend{
+    font-family: var(--main-font);
+    width: 100%;
+    background: var(--beige-color);
+    padding: .625rem;
+}
+.form-row {
+    padding: .3rem;
+    color: white;
+}
+.form-row:nth-child(even) {
+    background-color: var(--main-color);
+}
+.form-row:nth-child(odd) {
+    background-color: var(--secundary-color);
+}
+.form-lbl,
+.form input {
+    display: inline-block;
+    padding: .3rem;
+}
+.form input:focus {
+    outline: none;
+}
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="tel"],
+.form input[type="email"] {
+    border: none;
+    border-radius: 2px;
+    font-family: var(--main-font);
+}
+.form-lbl {
+    width: 30%;
+    text-align: center;
+}
+.short-input {
+    width: 4rem;
+}
+.mid-input {
+    width: 10rem;
+}
+.large-input {
+    width: 20rem;
+}
+.radio-check-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-check-container div {
+    margin-left: 2rem;
+}
+.form .form-row textarea {
+    width: 80%;
+    height: 3rem;
+    display: block;
+    font-family: var(--main-font);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.for-sale-content h1, 
+.for-sale-content > p{
+    text-align: center;
+}
+.submit-reset-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.23rem;
+    padding: .625rem;
+    margin-top: .625rem;
+}
+.submit-reset-container input {
+    border: none;
+    padding: .34rem .7rem;
+    color: #fff;
+    transition: all .3s ease-out;
+    font-family: var(--main-font);
+}
+.submit-reset-container input:hover {
+    border-radius: 3px;
+    cursor: pointer;
+    scale: 1.1;
+}
+.submit-reset-container input[type="submit"] {
+    background: var(--green-color);
+}
+.submit-reset-container input[type="reset"] {
+    background: var(--red-color);
+}
+/* ------------------------ FOR BUY STYLES ------------------------ */
+.for-buy-slogan {
+    background-image: url(../assets/for-buy-slogan.jpg);
+}
+.city-anchors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: .625rem 0;
+}
+.city-card {
+    display: flex;
+    width: 12rem;
+    height: 10rem;
+    transition: .5s all ease-out;
+    text-align: center;
+    align-items:end;
+    text-decoration: none;
+}
+.city-card:hover {
+    width: 16rem;
+    cursor: pointer;
+}
+.city-card p {
+    width: 100%;
+    background-color: var(--secundary-color);
+    color: #fff;
+    text-align: center;
+    transition: .5s all ease-out;
+    padding: .3rem 0;
+}
+.city-card:hover p{
+    background: var(--red-color);
+}
+.city-card:nth-child(1) {
+    background-image: url(../assets/pisos-madrid.jpg);
+}
+.city-card:nth-child(2) {
+    background-image: url(../assets/pisos-barcelona.jpeg);
+}
+.city-card:nth-child(3) {
+    background-image: url(../assets/pisos-malaga.jpg);
+}
+.city-card:nth-child(4) {
+    background-image: url(../assets/pisos-sevilla.jpg);
+}
+.region {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    justify-content: space-evenly;
+}
+
+.for-buy-content h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 2.50rem 0 1.25rem;
+}
+.site {
+    /* width: 80%; */
+    width: 45%;
+    height: 12rem;
+    padding: .625rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: .625rem;
+    transition: .3s all ease-out;
+
+}
+.site:hover {
+    background: var(--beige-color);
+    border-radius: .2rem;
+    cursor: pointer;
+}
+.site-photo {
+    width: 40%;
+    height: 80%;
+    transition: .3s all ease-out;
+}
+.site:hover .site-photo {
+    height: 100%;
+}
+.site-info {
+    width: 60%;
+}
+/* --------------- SITIOS EN MADRID --------------- */
+#madrid .site:nth-child(1) .site-photo {
+    background-image: url(../assets/apartamento-madrid.jpg);
+}
+#madrid .site:nth-child(2) .site-photo {
+    background-image: url(../assets/casa-madrid.jpg);
+}
+#madrid .site:nth-child(3) .site-photo {
+    background-image: url(../assets/casa2-madrid.jpg);
+}
+#madrid .site:nth-child(4) .site-photo {
+    background-image: url(../assets/pisos-madrid.jpg);
+}
+#madrid .site:nth-child(5) .site-photo {
+    background-image: url(../assets/despacho-madrid.jpg);
+}
+#madrid .site:nth-child(6) .site-photo {
+    background-image: url(../assets/habitacion-madrid.jpg);
+}
+/* --------------- SITIOS EN BARCELONA --------------- */
+#barcelona .site:nth-child(1) .site-photo {
+    background-image: url(../assets/casa-barcelona.jpg);
+}
+#barcelona .site:nth-child(2) .site-photo {
+    background-image: url(../assets/casa3-barcelona.jpg);
+}
+#barcelona .site:nth-child(3) .site-photo {
+    background-image: url(../assets/pisos-barcelona.jpeg);
+}
+#barcelona .site:nth-child(4) .site-photo {
+    background-image: url(../assets/apartamento-barcelona.jpg);
+}
+#barcelona .site:nth-child(5) .site-photo {
+    background-image: url(../assets/apartamento2-barcelona.jpg);
+}
+#barcelona .site:nth-child(6) .site-photo {
+    background-image: url(../assets/habitacion-madrid.jpg);
+}
+/* --------------- SITIOS EN MALAGA --------------- */
+#malaga .site:nth-child(1) .site-photo {
+    background-image: url(../assets/casa-malaga.jpg);
+}
+#malaga .site:nth-child(2) .site-photo {
+    background-image: url(../assets/casa2-malaga.jpg);
+}
+#malaga .site:nth-child(3) .site-photo {
+    background-image: url(../assets/casa3-malaga.jpg);
+}
+#malaga .site:nth-child(4) .site-photo {
+    background-image: url(../assets/pisos-malaga.jpg);
+}
+#malaga .site:nth-child(5) .site-photo {
+    background-image: url(../assets/despacho-malaga.jpg);
+}
+#malaga .site:nth-child(6) .site-photo {
+    background-image: url(../assets/apartamento-malaga.jpg);
+}
+/* --------------- SITIOS EN SEVILLA --------------- */
+#sevilla .site:nth-child(1) .site-photo {
+    background-image: url(../assets/casa-sevilla.jpg);
+}
+#sevilla .site:nth-child(2) .site-photo {
+    background-image: url(../assets/casa2-sevilla.jpg);
+}
+#sevilla .site:nth-child(3) .site-photo {
+    background-image: url(../assets/habitacion-sevilla.jpg);
+}
+/* ------------------------ FOR CONTACT STYLES ------------------------ */
+.contact-content {
+    width: 80%;
+}
+.contact-content > h1,
+.contact-content > p {
+    text-align: center;
+}
+.contact-content h2 {
+    text-align: center;
+}
+.direction {
+    width: 80%;
+    max-width: 1000px;
+    height: 20rem;
+    max-height: 800px;
+    display: block;
+    margin: .625rem auto;
+}
+.schedule {
+    width: 60%;
+    margin: 1.30rem auto;
+}
+.schedule table {
+    width: 100%;
+    font-family: var(--brand-font);
+    border: 1px solid var(--beige-color);
+    padding: 1.25rem;
+    border-collapse: collapse;
+}
+.schedule table tr th {
+    background-color: var(--beige-color);
+    color: var(--main-color);
+    padding: .3rem;
+}
+.schedule table tr td {
+    padding: .625rem;
+    text-align: center;
+    border: 1px solid var(--beige-color);
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    nav {
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .nav-container {
+        width: 100vw;
+    }
+    .nav-container li a {
+        font-size: 1.5rem;
+    }
+    main {
+        font-size: 1.3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content {
+        width: 95%;
+    }
+    .aside-content {
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .action-call {
+        flex-direction: column;
+    }
+    .action-call-column-1,
+    .action-call-column-2 {
+        width: 100%;
+    }
+    .week-new-cover {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .week-new-pic {
+        width: 60%;
+        height: 10rem;
+    }
+    .week-new-title {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .form-lbl {
+        width: 50%;
+    }
+    .form input {
+        font-size: 1.4rem;
+    }
+    .site {
+        width: 100%;
+    }
+}
+@media(max-width:480px) {
+    .name-container {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .ul-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    .nav-container li a {
+        font-size: 1rem;
+    }
+    main {
+        font-size: 1rem;
+    }
+    .main-content {
+        padding: 0;
+    
+    }
+    .main-content h1 {
+        font-size: 2rem;
+    }
+    .main-content h2 {
+        font-size: 1.5rem;
+    }
+    .hero {
+        height: 300px;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+        height: 300px;
+        padding: 6rem 0 0 3rem;
+    }
+    .hero h1 span {
+        font-size: .8rem;
+    }
+    .form {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .form input {
+        font-size: 1rem;
+    }
+}
