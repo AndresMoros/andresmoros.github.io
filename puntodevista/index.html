@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Vista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--Estilos generales para TODAS las páginas-->
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <div class="preload"><img src="img/LOGO PUNTO DE VISTA.png" alt=""></div>
+    <div class="cover" id="foo"></div>
+    <header>
+        <nav class="nav-bar">
+         <div class="nav-bar__container">
+             <div class="clima-tiempo">
+                  <div class="date">
+                      <div id="provincia"></div>
+                      <div id="region"></div>
+                      <div id="reloj"></div>
+                 </div>
+             </div>
+                 <div class="weather">
+                     <div id="temperatura"></div>
+                     <img src="" alt="" id="icon" width="35px" height="30px">
+                 </div>
+         </div>
+              <a href="index.html" class="logo">
+                  <img src="img/LOGO PUNTO DE VISTA.png" alt="" class="logo__icon">
+              </a>
+             <div class="social-media">
+                 <a href="#" class="social-media__anchor"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#" class="social-media__anchor"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#" class="social-media__anchor"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="#" class="social-media__anchor"><i class="fa-brands fa-youtube"></i></a>
+             </div>
+             <div class="categories">
+                 <a href="politica.html" class="category category--politica">Política</a>
+                 <a href="deportes.html" class="category category--deporte">Deporte</a>
+                 <a href="sociedad.html" class="category category--sociedad">Sociedad</a>
+                 <a href="cultura.html" class="category category--cultura">Cultura</a>
+             </div>
+         </nav>
+     </header>
+    <div class="container">
+        <main> <!-- MAIN -->
+            <a href="#" class="img-box main-new main-new-deporte">
+                <div class="main-new__content">
+                    <h2 class="main-new__title">Nadal y Alcaraz, un dobles de ensueño para los Juegos de París</h2>
+                    <p class="main-new__paragraph">
+                        El exjugador de fútbol de la Real Sociedad Javier De Pedro ha ingresado en prisión tras ser arrestado por la Ertzaintza este martes para cumplir una pena de nueve meses de prisión por un delito de violencia machista.
+                    </p>
+                </div>
+            </a>
+            <!---------- POLITICA ---------->
+            <h2 class="title title--politica">Politica</h2>
+            <div class="swiper swiper--desktop politica--swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://imagenes.elpais.com/resizer/v2/P67FVP2AF5FHLLJQJ3RWXA25SU.jpg?auth=844326bee8a42e6c4019eeea37fea6bba9cc6d7076e62f134ed0c988ac0a7d43&width=1200" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--politica">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://imagenes.elpais.com/resizer/v2/P67FVP2AF5FHLLJQJ3RWXA25SU.jpg?auth=844326bee8a42e6c4019eeea37fea6bba9cc6d7076e62f134ed0c988ac0a7d43&width=1200" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--politica">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://imagenes.elpais.com/resizer/v2/P67FVP2AF5FHLLJQJ3RWXA25SU.jpg?auth=844326bee8a42e6c4019eeea37fea6bba9cc6d7076e62f134ed0c988ac0a7d43&width=1200" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--politica">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://imagenes.elpais.com/resizer/v2/P67FVP2AF5FHLLJQJ3RWXA25SU.jpg?auth=844326bee8a42e6c4019eeea37fea6bba9cc6d7076e62f134ed0c988ac0a7d43&width=1200" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--politica">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+            </div>
+            <!---------- POLITICA ---------->
+            <!---------- SOCIEDAD ---------->
+            <h2 class="title title--sociedad">Sociedad</h2>
+            <div class="swiper swiper--desktop sociedad--swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://www.elplural.com/uploads/s1/17/80/85/8/whatsapp-image-2024-06-13-at-16-48-48_4_800x450.jpeg" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--sociedad">
+                            <h4 class="card__title">Secuestran a la virgen de Santa Cruz de Mudela y el pueblo manifiesta su "gran dolor"</h4>
+                        </div>
+                    </a>
+                </div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+            </div>
+            <!---------- SOCIEDAD ---------->
+            <!---------- CULTURA ---------->
+            <h2 class="title title--cultura">Cultura</h2>
+            <div class="swiper swiper--desktop cultura--swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://cameraandlightmag.com/wp-content/uploads/img_not/DyG_Making1%40Manolo_Pav%C3%B3nint.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--cultura">
+                            <h4 class="card__title">Secuestran a la virgen de Santa Cruz de Mudela y el pueblo manifiesta su "gran dolor"</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://www.elplural.com/uploads/s1/16/70/69/7/muere-protagonista-el-beso_4_800x450.jpeg" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--cultura">
+                            <h4 class="card__title">Muere la protagonista de "El beso" de Robert Doisneau</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://www.elplural.com/uploads/s1/16/54/57/5/11-horizonte-y-limite-cxf-madrid_4_800x450.jpeg" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--cultura">
+                            <h4 class="card__title">
+                                CaixaForum Madrid nos invita a revisar nuestra visión del paisaje y el mundo que nos rodea
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://www.elplural.com/uploads/s1/16/07/49/7/festival-art-battalion-2023-en-espacio-rastro-madrid-marta-alberca_4_800x450.jpeg" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--cultura">
+                            <h4 class="card__title">
+                                Art Battalion o cómo sumergirse en una vorágine de arte contemporáneo interactivo
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+            </div>
+            <!---------- CULTURA ---------->
+            <!---------- DEPORTES ---------->
+            <h2 class="title title--deporte">Deportes</h2>
+            <div class="swiper swiper--desktop deporte--swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o42Ei.img?w=768&h=512&m=6&x=615&y=245&s=107&d=107" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--deporte">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o42Ei.img?w=768&h=512&m=6&x=615&y=245&s=107&d=107" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--deporte">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o42Ei.img?w=768&h=512&m=6&x=615&y=245&s=107&d=107" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--deporte">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class="card" href="#">
+                        <div class="card__thumbnail">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o42Ei.img?w=768&h=512&m=6&x=615&y=245&s=107&d=107" alt="" class="card__img">
+                        </div>
+                        <div class="card__content card--deporte">
+                            <h4 class="card__title">La publicación de Falange sobre Ana Peleteiro obliga a muchos a mirar dos veces para ver que es real</h4>
+                        </div>
+                    </a>
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+              </div>
+            <!---------- DEPORTES ---------->
+        </main>
+        <aside>
+            <div class="anuncio anuncio--vertical">
+                <div class="anuncio__miniatura">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4a66f333332919.56a84344447ec.jpg" alt="" class="anuncio__img">
+                </div>
+            </div>
+            <div class="anuncio anuncio--horizontal">
+                <div class="anuncio__miniatura">
+                    <img src="https://miro.medium.com/v2/resize:fit:1050/1*DcJz6l8JXZ7bV0SgW36MNg.jpeg" alt="" class="anuncio__img">
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="img/scroll/1.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/2.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/3.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/4.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/5.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/6.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/7.jpeg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="img/scroll/1.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/2.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/3.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/4.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/5.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/6.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scroll/7.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+<footer>
+    <nav class="nav-bar nav-bar--footer">
+        <div class="logo logo--footer">
+            <img src="../LOGO PUNTO DE VISTA.png" alt="" class="logo__icon">
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__content">
+                <h5 class="subscribe__title">¡Subcribete para no perderte nada!<h5>
+                <p class="subscribe__text">Ya contamos con más de 10 mil lectores mensuales, todos bien informados</p>
+            </div>
+            <form class="suscribe__form">
+                <input type="email" name="correo" id="correo" class="subscribe__input">
+                <input type="submit" value="Suscribirse" class="subscribe__btn">
+            </form>
+        </div>
+        <div class="nav-bar__container">
+            <div class="social-media social-media--horizontal">
+                <a href="#" class="social-media__anchor"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-media__anchor"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-media__anchor"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-media__anchor"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/slideshow-swiper.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+
+//slides
+slidesPerView: 1,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable:  true,
+},
+breakpoints: {
+        // when window width is >= 499px
+        499: {
+            slidesPerView: 2.2,
+            spaceBetweenSlides: 50
+        },
+    },
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+});
+</script>
+<script src="index.js"></script>
+<script src="clima.js"></script>
+</body>
+
+</html>
