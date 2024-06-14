@@ -346,6 +346,10 @@ header .fa-brands {
     padding: .625rem;
     left: 0;
 }
+.logo--footer .logo__icon {
+    width: 100%;
+    height: auto;
+}
 .subscribe {
     width: max-content;
     display: flex;
@@ -468,7 +472,7 @@ header .fa-brands {
     /* ----- NOTICIA PRINCIPAL DEPORTE ----- */
 .main-new-deporte {
     background: var(--deporte-color);
-    background-image: linear-gradient(0deg, #550000 0%, #e646469f 25%, #ffffff3a 50%), url(https://imagenes.elpais.com/resizer/v2/GCOUAYTXFVHINCCRHFRUMDQUFQ.jpg?auth=85d581494d85ad4a677b13d5848af903af72a420e378d4b233d526c5a7cb7514&width=1200);
+    background-image: linear-gradient(0deg, #550000 0%, #e646469f 15%, #ffffff12 35%), url(https://imagenes.elpais.com/resizer/v2/GCOUAYTXFVHINCCRHFRUMDQUFQ.jpg?auth=85d581494d85ad4a677b13d5848af903af72a420e378d4b233d526c5a7cb7514&width=1200);
 }
 .main-new-deporte .main-new__content {
     background: #fff;
@@ -669,4 +673,12 @@ header .fa-brands {
 /* DEPORTES */
 .noticiasecundaria h2 {
     font-size: 1rem;
+}
+@media(max-width:400px) {
+    .noticiaprincipalpolitica {
+        height: 14.5rem;
+      }
+    .noticiaprincipalsociedad {
+        height: 24rem;
+    }
 }
