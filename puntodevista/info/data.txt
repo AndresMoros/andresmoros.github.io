@@ -15,12 +15,14 @@ Fuente:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-index
--Politica
-    -un articulo
--Deporte
-    -un articulo
--Cultura
-    -un articulo
--Sociedad
-    -un articulo
+Wireframe:
+https://excalidraw.com/#json=wGUfwiNimk6Dj5gdmS4WI,X8auPGey_Jm-HXDLVK9LkQ
+(not updated)
+
+Clima Widget: 
+https://weatherwidget.org/es/
+
+Tools and resources:
+https://www.favicon-generator.org/
+https://www.asciiart.eu/image-to-ascii
+https://codepen.io/alvarotrigo/pen/oNGzoYd
