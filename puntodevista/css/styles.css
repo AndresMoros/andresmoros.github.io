@@ -1,3 +1,4 @@
+/* Juan */
 * {
   margin: 0%;
   padding: 0%;
@@ -5,7 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* DEPORTES */
+/* CLASES COMPARTIDAS JUAN , JANAHÍ y ESTEBAN */
 .header {
   width: 100%;
   max-width: 1400px;
@@ -13,45 +14,38 @@
   margin: auto;
   background-color: blue;
 }
-.container {
+.aside {
+  width: 25%;
+  margin-top: 1rem;
+  background-color: yellow;
+}
+.footer {
+  width: 100%;
+  max-width: 1400px;
+  height: 10rem;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: black;
+}
+/* HASTA AQUÍ CLASES COMPARTIDAS */
+
+.contenedor {
   width: 100%;
   max-width: 1400px;
   margin: auto;
   display: flex;
+  justify-content: space-around;
 }
-.maincategori {
+.divcategori {
   width: 70%;
 }
-.maincategori a {
+.divcategori a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-}
-.noticiaprincipaldeportes {
-  width: 100%;
-  height: 25rem;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column-reverse;
-  background-image: linear-gradient(
-      0deg,
-      #3e0000 1%,
-      #9708088f 10%,
-      #ffffff00 50%
-    ),
-    url(../img/nadal-deportes.jpg);
-    background-size: cover;
-}
-.textnotiprincipaldeportes {
-  width: 100%;
-  height: auto;
-  color: #ffffff;
 }
 .parrafo {
   height: 0;
   overflow: hidden;
-}
-.noticiaprincipaldeportes:hover .parrafo {
-  height: max-content;
 }
 
 .noticias {
@@ -68,11 +62,38 @@
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
+  text-decoration: none;
 }
 .noticiasecundaria h2 {
   color: white;
   padding: 0.5rem;
 }
+
+/* DEPORTES */
+.noticiaprincipaldeportes {
+  width: 100%;
+  height: 25rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  background-image: linear-gradient(
+      0deg,
+      #3e0000 1%,
+      #9708088f 10%,
+      #ffffff00 50%
+    ),
+    url(../img/nadal-deportes.jpg) !important;
+  background-size: cover;
+}
+.noticiaprincipaldeportes:hover .parrafo {
+  height: max-content;
+}
+.textnotiprincipaldeportes {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+}
+
 .noticia1d {
   background-image: url(../img/fatima-deportes.jpg);
 }
@@ -110,19 +131,10 @@
   background-color: #9708088f;
 }
 
-.aside {
-  width: 30%;
-  background-color: yellow;
-}
-.footer {
-  width: 100%;
-  height: 10rem;
-  background-color: black;
-}
 /* POLITICA */
 .noticiaprincipalpolitica {
   width: 100%;
-  /* height: 14rem !important; */
+  height: 25rem;
   margin-top: 1rem;
   display: flex;
   flex-direction: column-reverse;
@@ -132,7 +144,7 @@
       #2d3250 10%,
       #ffffff00 50%
     ),
-    url(../img/elecciones-politica.jpg)!important;
+    url(../img/politica.jpg) !important;
   background-size: cover;
 }
 .noticiaprincipalpolitica:hover .parrafo {
@@ -284,8 +296,311 @@
 .noticia6s h2 {
   background-color: #5b5c5b6e;
 }
+
+/* Janahí */
+.caja {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: auto;
+  border-bottom: 2px grey solid;
+  margin-top: 1rem;
+
+  /* background-color: red; */
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+}
+
+.foto img {
+  width: 100%;
+}
+
+.foto3 {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.foto3 img {
+  width: 100%;
+}
+
+.textoimg2 {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.principal {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: tomato */
+}
+
+.seccion {
+  width: 70%;
+}
+
+.foto2 {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.foto2 img {
+  width: 100%;
+}
+
+.titulo {
+  width: 100%;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subtitulo {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(58, 55, 55);
+  margin-top: 20px;
+}
+
+.texto {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+.imgtenis {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.imgtenis img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titulo {
+  font-size: 20px;
+  /* margin-top: 10px; */
+  font-family: "Montserrat", sans-serif;
+}
+
+iframe {
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.textoborder {
+  border-bottom: 2px solid grey;
+}
+
+.foto4 {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.foto4 img {
+  width: 100%;
+}
+
+.span {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Esteban */
+.mainarticulos {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.todosart {
+  width: 70%;
+  padding-top: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 30rem;
+}
+.swiper a {
+  text-decoration: none;
+}
+.swiper1 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.5rem;
+}
+.noticiasart {
+  width: 97%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border: white solid 1px;
+  border-radius: 5px;
+  padding: 6px;
+}
+.textnotart {
+  width: 65%;
+  color: white;
+}
+.imgnotart {
+  width: 33%;
+  border: white solid 1px;
+  border-radius: 5px;
+}
+.dentro {
+  width: 100%;
+  height: 100%;
+}
+img[class="dentro"] {
+  object-fit: cover;
+}
+iframe[class="dentro"] {
+  margin: 0;
+  border-radius: 5px !important;
+}
+/* Noticias Culturales */
+.sectarticulos1 {
+  width: 100%;
+  padding-top: 0.5rem;
+  background-color: #5ca8a4;
+  padding-bottom: 1rem;
+}
+.articarticulos1 {
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: white;
+}
+.articarticulos1 h1 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1rem solid #5ca8a4;
+  box-shadow: -2px -2px 8px 2px grey inset;
+}
+.artpag1 {
+  --swiper-pagination-bullet-horizontal-gap: 1rem;
+  /* --swiper-pagination-drag-bg-color: rgba(250, 9, 9, 0.5);  */
+  --swiper-pagination-bullet-inactive-opacity: 0.9;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-theme-color: #5ca8a4;
+}
+
+/* NOticias Politicas */
+.sectarticulos2 {
+  width: 100%;
+  padding-top: 0.5rem;
+  background-color: #2d3250;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.articarticulos2 {
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: white;
+}
+.articarticulos2 h1 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1rem solid #2d3250;
+  box-shadow: -2px -2px 8px 2px grey inset;
+}
+
+.artpag2 {
+  --swiper-pagination-bullet-horizontal-gap: 1rem;
+  /* --swiper-pagination-drag-bg-color: rgba(250, 9, 9, 0.5);  */
+  --swiper-pagination-bullet-inactive-opacity: 0.9;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-theme-color: #2d3250;
+}
+
+/* Noticias Deportivas */
+.sectarticulos3 {
+  width: 100%;
+  padding-top: 0.5rem;
+  background-color: #9708088f;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.articarticulos3 {
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: white;
+}
+.articarticulos3 h1 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1rem solid #9708088f;
+  box-shadow: -2px -2px 8px 2px grey inset;
+}
+
+.artpag3 {
+  --swiper-pagination-bullet-horizontal-gap: 1rem;
+  /* --swiper-pagination-drag-bg-color: rgba(250, 9, 9, 0.5);  */
+  --swiper-pagination-bullet-inactive-opacity: 0.9;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-theme-color: #9708088f;
+}
+
+/* Noticias Sociales */
+.sectarticulos4 {
+  width: 100%;
+  padding-top: 0.5rem;
+  background-color: #6e706e;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.articarticulos4 {
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: white;
+}
+.articarticulos4 h1 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1rem solid #6e706e;
+  box-shadow: -2px -2px 8px 2px grey inset;
+}
+
+.artpag4 {
+  --swiper-pagination-bullet-horizontal-gap: 1rem;
+  /* --swiper-pagination-drag-bg-color: rgba(250, 9, 9, 0.5);  */
+  --swiper-pagination-bullet-inactive-opacity: 0.9;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-theme-color: #6e706e;
+}
+
+/* Juan */
 /* MEEDIA QUIERI */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* DEPORTES */
   h1 {
     font-size: 1.2rem;
@@ -293,10 +608,10 @@
   h2 {
     font-size: 1rem;
   }
-  .container {
+  .contenedor {
     flex-direction: column;
   }
-  .maincategori {
+  .divcategori {
     width: 100%;
   }
   .noticiaprincipaldeportes,
@@ -307,14 +622,90 @@
     height: 14%;
     background-repeat: no-repeat;
   }
-  .textnotiprincipaldeportes, .textnotiprincipal{
+  .textnotiprincipaldeportes {
     height: 14rem;
-    padding-top: 11rem;
+    padding-top: 10rem;
+  }
+  .textnotiprincipal {
+    height: 14rem;
+    padding-top: 10rem;
   }
   .noticias {
     flex-direction: column;
   }
-   .noticiasecundaria{
+  .noticiasecundaria {
     width: 100%;
-   }
+  }
+
+  /* Janahí */
+  .principal {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .seccion {
+    width: 100%;
+  }
+
+  .texto {
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  .subtitulo {
+    padding: 20px;
+    margin-top: 5px;
+  }
+
+  .titulo {
+    padding: 20px;
+  }
+
+  .textoimg2 {
+    padding: 15px;
+  }
+
+  iframe {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  /* ESTEBAN */
+  .mainarticulos {
+    flex-direction: column;
+  }
+  .todosart {
+    width: 100%;
+  }
+  /* .sectarticulos1{
+  width: 100%;
+} */
+  .articarticulos1 h1 {
+    font-size: 1.1rem;
+  }
+  .articarticulos2 h1 {
+    font-size: 1.1rem;
+  }
+  .articarticulos3 h1 {
+    font-size: 1.1rem;
+  }
+  .articarticulos4 h1 {
+    font-size: 1.1rem;
+  }
+  .swiper {
+    height: 20rem;
+  }
+  .noticiasart {
+    flex-direction: column;
+  }
+  .textnotart {
+    width: 100%;
+  }
+  .imgnotart {
+    width: 100%;
+  }
+
+  .aside {
+    width: 100%;
+    height: 300px;
+  }
 }

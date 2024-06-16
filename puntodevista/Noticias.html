@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noticias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+       <div class="nav-bar__container">
+           <div class="clima-tiempo">
+                <div class="date">
+                    <div id="provincia"></div>
+                    <div id="region"></div>
+                    <div id="reloj"></div>
+               </div>
+           </div>
+               <div class="weather">
+                   <div id="temperatura"></div>
+                   <img src="" alt="" id="icon" width="35px" height="30px">
+               </div>
+       </div>
+            <a href="index.html" class="logo">
+                <img src="img/LOGO PUNTO DE VISTA.png" alt="" class="logo__icon">
+            </a>
+           <div class="social-media">
+               <a href="#" class="social-media__anchor"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" class="social-media__anchor"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#" class="social-media__anchor"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#" class="social-media__anchor"><i class="fa-brands fa-youtube"></i></a>
+           </div>
+           <div class="categories">
+               <a href="politica.html" class="category category--politica">Política</a>
+               <a href="deportes.html" class="category category--deporte">Deporte</a>
+               <a href="sociedad.html" class="category category--sociedad">Sociedad</a>
+               <a href="cultura.html" class="category category--cultura">Cultura</a>
+           </div>
+       </nav>
+   </header>
+    <main class="mainarticulos">
+      <section class="todosart">
+
+        <!-- --------------- POLITICA --------------- -->
+
+        <section class="sectarticulos2">
+          <article class="articarticulos2">
+            <h1 id="noticias-politicas">Noticias Políticas</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#supremo">
+                    <div class="noticia1p noticiasecundaria swiper1">
+                      <h2>
+                        El Supremo reabre la guerra de Hacienda contra el magnate del
+                        acero y anula su absolución de fraude fiscal.
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#congela"> 
+                    <div class="noticia2p noticiasecundaria swiper1">
+                      <h2>
+                        El PP congela los recursos por la amnistía mientras intenta romper
+                        la mayoría del Gobierno con Junts y el PNV
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#ayuso"> 
+                    <div class="noticia3p noticiasecundaria swiper1">
+                      <h2>
+                        El Gobierno de Ayuso recurrirá la ley de amnistía tras asegurar
+                        que cuenta con el aval de la abogacía autonómica
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#juez"> 
+                    <div class="noticia4p noticiasecundaria swiper1">
+                      <h2>
+                        El juez acepta ceder a la Fiscalía Europea parte de su
+                        investigación a Begoña Gómez
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#sevilla"> 
+                    <div class="noticia5p noticiasecundaria swiper1">
+                      <h2>Una jueza de Sevilla pide a la Policía que localice a Vito Quiles, jefe de prensa de Alvise Pérez</h2>
+                    </div>
+                  </a>
+                </div>
+                <!-- <div class="swiper-slide">
+                  <a href="#ultima"> 
+                    <div class="noticia6p noticiasecundaria swiper1">
+                      <h2>Última hora de la actualidad política, en directo</h2>
+                    </div>
+                  </a>
+                </div> -->
+              </div>
+              <div class="swiper-pagination artpag2"></div>
+            </div>
+          </article>
+          <!-- ----------------------- NOTICIAS ----------------------- -->
+           <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="supremo">El Supremo reabre la guerra de Hacienda</h2>
+              <p>
+                El magnate español del acero tendrá que volver a pasar por el banquillo de los acusados. El Tribunal Supremo ha anulado una de las dos absoluciones del empresario José María Aristrain por el fraude fiscal masivo que le atribuyen tanto Hacienda como la Fiscalía y ha ordenado que vuelva a ser juzgado por los tribunales madrileños, una causa en la que se enfrentó a penas de hasta 60 años de cárcel por un fraude de más de 200 millones de euros, considerado el mayor de España en haber sido llevado a juicio.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/fraude-fiscal-politica.jpg" alt="">
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="congela">El PP congela los recursos por la amnistía</h2>
+              <p>“Tras la publicación de la amnistía, el señor Sánchez le resulta cada vez más inútil al independentismo”. Así marcó este martes el líder del PP, Alberto Núñez Feijóo, ante sus barones la estrategia que seguirá su partido en las semanas que quedan hasta que termine el curso político. La dirección nacional y los barones autonómicos, que habían competido por liderar titulares contra la amnistía, echan ahora el freno a los anunciados recursos ante el Tribunal Constitucional. El nuevo objetivo: desbaratar la endeble mayoría que sustenta al Gobierno con leyes apoyadas por las derechas independentistas.</p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/pp-congela-politica.jpg" alt="">
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="ayuso">El Gobierno de Ayuso recurrirá</h2>
+              <p>La presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso, ha insistido hoy en que la Comunidad de Madrid recurrirá la ley de amnistía ante el Tribunal Constitucional. El Ejecutivo de Ayuso “solicitó un informe a los servicios jurídicos y dicho informe avala la interposición de este recurso contra esta infamia”, ha dicho la líder regional. El pleito se formalizará en los próximos tres meses. 
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/ayuso-politica.jpg" alt="">
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="juez">El juez acepta ceder a la Fiscalía Europea parte de su
+                investigación a Begoña Gómez</h2>
+              <p>El juez Juan Carlos Peinado ha aceptado ceder una parte de la investigación que desarrolla contra Begoña Gómez a la Fiscalía europea después de que este organismo se lo reclamara por tratarse del destino final de fondos procedentes de la Unión Europea. De la providencia de un párrafo dictada se entiende que Peinado considera que sigue habiendo hechos que investigar pese a que la Audiencia Provincial de Madrid, su instancia superior, delimitó el procedimiento a las adjudicaciones a las empresas de Juan Carlos Barrabés, justamente lo que debe ser entregado a la Fiscalía europea.</p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/begoña-gomez-politica.jpg" alt="">
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="sevilla">Una jueza de Sevilla pide</h2>
+              <p>ULa jueza del Juzgado de Instrucción 18 de Sevilla, María José Moreno Díaz, ha pedido a la Policía Nacional que localice a Vito Quiles, jefe de prensa del eurodiputado electo Alvise Pérez. Tal y como recoge eldiario.es, aunque el auto recogía en un primer momento la detención de Quiles, se debe a un error que, según fuentes judiciales, ya se está subsanando.</p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/jueza-sevilla-politica.jpg" alt="">
+            </div>
+          </article>
+        </section>
+        <!-- ---------------------- SOCIALES ---------------------- -->
+        <section class="sectarticulos4">
+          <article class="articarticulos4">
+            <h1 id="noticias-sociales">Noticias Sociales</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#mir"> 
+                    <div class="noticia1s noticiasecundaria swiper1">
+                      <h2>Los MIR temen que se les utilice para cubrir las vacaciones</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#europa"> 
+                    <div class="noticia2s noticiasecundaria swiper1">
+                      <h2>
+                          Europa se arma con vacunas para una posible pandemia de gripe aviar
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#limita"> 
+                    <div class="noticia3s noticiasecundaria swiper1">
+                      <h2>
+                          Alemania limita el consumo de cannabis al volante dos meses después de legalizarlo
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#pau"> 
+                    <div class="noticia4s noticiasecundaria swiper1">
+                      <h2>
+                          Así será la PAU, la nueva Selectividad
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#aragon"> 
+                    <div class="noticia5s noticiasecundaria swiper1">
+                      <h2>
+                          Aragón y La Rioja son las comunidades autónomas que mejor atención de anticoncepción ofrecen
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#desigualdades"> 
+                    <div class="noticia6s noticiasecundaria swiper1">
+                      <h2>
+                          Desigualdades en la EBAU
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination artpag4"></div>
+            </div>
+          </article>
+          <!-- ------------------- ARTICULOS SOCIEDAD ------------------- -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="mir">Los MIR temen las vacaciones</h2>
+              <p>Los MIR temen que se les utilice para cubrir las vacaciones ante el déficit de médicos Los sindicatos vigilarán que no se traslade a los residentes de centro solo por necesidades de personal Sanidad fija que los MIR de último año podrán pasar solos la consulta si tienen cerca a otro médico al que preguntar dudas</p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/los-mir-sociedad.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="europa">Europa se arma con vacunas contra la gripe aviar</h2>
+              <p>
+                El mundo se enfrenta al peor episodio de gripe aviar de las últimas dos décadas. El virus ha llegado a todos los rincones del planeta y se ha convertido en una amenaza para todos los mamíferos, incluidos los humanos. Si su presencia no disminuye en la naturaleza, es solo cuestión de tiempo que acabe transmitiéndose de forma sostenida entre personas, vaticinan los expertos. Y cuando esto ocurra podríamos enfrentarnos a una nueva pandemia con un virus respiratorio que se transmite como el coronavirus o cualquier gripe.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/gripe-a-sociedad.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="limita">Alemania limita el consumo de cannabis</h2>
+              <p>
+                Un conductor de 22 años que arrolló a un ciclista en Ludwigshafen será el primer multado por conducir bajo los efectos del cannabis. El evidente olor en el coche alertó a la policía, que pidió una confirmación a través de un análisis de sangre. Tras la legalización del consumo recreativo del cannabis, que entró en vigor el 1 de abril, los accidentes por esta causa se han multiplicado y los legisladores alemanes se han visto obligados a seguir trabajando.
+                <br><br>
+                La primera y más urgente reforma que han debido abordar afecta a las leyes de trafico. El Bundestag ha aprobado una nueva ley de la coalición semáforo que fija un límite del ingrediente activo THC en el organismo durante la conducción y establece multas por las consecuentes infracciones. Basada en el límite de 0,5 por mil de alcohol en sangre, Alemania ha establecido un límite legal de 3,5 nanogramos de THC, bajo amenaza de multa de 500 euros y la una prohibición de conducir durante un mes.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/cannabis-sociedad.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="pau">La nueva Selectividad</h2>
+              <p>
+                “Es la primera vez que se incluyen criterios comunes y homogéneos para todos los territorios tanto en el formato de las pruebas como a la hora de evaluar dichas pruebas”, celebraba Pilar Alegría, la ministra de Educación, en rueda de prensa posterior al Consejo de Ministros, donde recordaba que es “imposible” un modelo “único” de selectividad para toda España como plantea el PP. En su intervención, la ministra defendía la nueva prueba de acceso cuente con “criterios comunes y homogéneos”, que sean “idénticos” para la evaluación “desde el punto de vista de la sintaxis y de ortografía”, teniendo en cuenta que las “competencias que tienen las comunidades autónomas y las universidades”.
+                <br>
+                <br>
+                La PAU mantiene la mayoría de características de la anterior EBAU, pero se añaden algunas novedades con una estructura, unas características básicas y unos criterios de corrección mínimos comunes para todo el territorio.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/pau-sociedad.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="aragon">Aragón y La Rioja</h2>
+              <p>
+                La Rioja y Aragón son las comunidades autónomas que mejor atención anticoncepción ofrecen a la población, mientras que Castilla-La Mancha, Castilla y León y País Vasco son las que deben mejorar este apartado, según un informe elaborado por Sedra-Federación de Planificación Familiar.
+                <br>
+                <br>
+                Según recoge el documento, cada comunidad autónoma otorga a la salud sexual, y en concreto a la anticoncepción, «una importancia muy desigual, y aplica una diversidad de modelos de gestión que producen inequidades que sufren las mujeres«. Por lo que la situación de la atención a la anticoncepción en España puede definirse «como heterogénea e inequitativa».
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/anticonceptivos-sociedad.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="desigualdad">Desigualdades en la EBAU</h2>
+              <p>
+                Los estudiantes de segundo de bachillerato están inmersos en los exámenes de acceso a la universidad: algunos ya esperan las notas, como los de La Rioja; otros, como en Madrid, están en plenos exámenes; mientras, en Cataluña y Andalucía no empezarán hasta el 14. Sobre las pruebas de este año, que llegan meses antes de que la LOMLOE llegue a los currículos de toda España, planean una nueva y una vieja polémica: la injusticia que para muchos alumnos supone que se hayan mantenido las normas, más laxas, de los exámenes covid, y la desigualdad que supone que no exista un examen único en toda España.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/mas-facil-sociedad.jpg" />
+            </div>
+          </article>
+        </section>
+
+        <!-- --------------- CULTURA --------------- -->
+        <section class="sectarticulos1">
+          <article class="articarticulos1">
+            <h1 id="noticias-culturales">Noticias Culturales</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#magia2">
+                    <div class="noticia1c noticiasecundaria swiper1">
+                      <h2>Todo lo que se sabe de Prácticamente magia 2</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#borja">
+                    <div class="noticia2c noticiasecundaria swiper1">
+                      <h2>
+                        Borja Jiménez acapara los principales premios de la
+                        Feria de San Isidro
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#cultura">
+                    <div class="noticia3c noticiasecundaria swiper1">
+                      <h2>
+                        Cultura abre el proceso para que sus dueños reclamen
+                        5.126 obras incautadas en la guerra
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#rihana">
+                    <div class="noticia4c noticiasecundaria swiper1">
+                      <h2>
+                        Rihanna anuncia que está "volviendo a empezar" con su
+                        primer disco en ocho años
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#muere">
+                    <div class="noticia5c noticiasecundaria swiper1">
+                      <h2>
+                        Muere Françoise Hardy, la cantante melancólica de los
+                        años yeyés que anhelaba el amor
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#subasta">
+                    <div class="noticia6c noticiasecundaria swiper1">
+                      <h2>
+                        Subastan por 3,9 millones de dólares en Londres el libro
+                        más antiguo de la historia
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination artpag1"></div>
+            </div>
+          </article>
+          <!-- ARTICULOS DE CULTURA -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="magia2">Practicamente Mágia 2</h2>
+              <p>
+                Las actrices podrían volver a interpretar a las hermanas Owens
+                en la secuela que prepara Warner Bros. Casi tres décadas, 26
+                años para ser exactos, han tenido que esperar los fans de
+                Prácticamente magia (1998) para tener noticias de las hermanas
+                Owens en la gran pantalla. Y es que el 10 de junio Warner Bros
+                confirmó la secuela directa de la película que adapta la saga de
+                novelas de Alice Hoffman. ¡Y lo hizo con un meme!
+              </p>
+            </div>
+            <div class="imgnotart">
+              <iframe
+                class="dentro"
+                src="https://www.youtube.com/embed/R7uixLkpjPs?si=JlsTsBy_LPMBsVme"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="borja">Borja Jimenez</h2>
+              <p>
+                Borja Jiménez, el suceso de San Isidro: ‘Para mí, lo más
+                importante, es que han sido dos Puertas Grandes muy
+                contundentes, con todo el mundo de acuerdo y eso es muy difícil
+                en Madrid’. legaba a la feria como debutante, aunque con el aval
+                casi de ser un torero de Madrid. El primer San Isidro de Borja
+                Jiménez. Aunque con una apuesta para posicionarse en lo más alto
+                del toreo. Tres tardes: Santiago Domecq, Victorino Martín y
+                Victoriano del Río. Un sinfín de emociones y sensaciones que
+                acabaron en el umbral de la Puerta Grande. Con una polémica más
+                centrada en el palco por negar la segunda oreja, que por su
+                rotunda tarde.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <iframe
+                class="dentro"
+                src="https://www.youtube.com/embed/Kwb4nex6yyw?si=GbhT7H2H1R0-CN_s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="cultura">Cultura abre el proceso</h2>
+              <p>
+                Cultura abre el proceso para que sus dueños reclamen 5.126 obras
+                incautadas en la guerra. «A partir de mañana, las personas que
+                localicen un bien de su propiedad, lo podrán reclamar y lo
+                estudiaremos caso por caso», ha explicado el ministro de
+                Cultura, Ernest Urtasun, que se ha mostrado «muy orgulloso» de
+                ser el primer Ministerio que cumple con este requerimiento de
+                inventario que establece la Ley de Memoria Democrática. Urtasun
+                da comienzo a esta medida casi ocho meses después de tomar
+                posesión el pasado noviembre. Ha justificado el tiempo que se ha
+                tardado en hacerlo en la necesidad de contar con un informe de
+                la abogacía del Estado que diera luz verde a la posibilidad de
+                hacer las devoluciones.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/ministro.jpg" />
+            </div>
+          </article>
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="rihana">Rihanna negó su retiro de la música y confirmó la llegada de su próximo disco</h2>
+              <p>
+                La cantante de Barbados asegura que revisará su discografía con
+                su "nueva perspectiva" y decidirá qué temas merecen quedarse en
+                su vida. Hace ya ocho años que Rihanna no sorprende con un nuevo
+                disco. Desde Anti, en 2016, no había vuelto a lanzar un LP, pero
+                ahora ha anunciado que está lista para volver al estudio y
+                planea volver a escuchar la música en la que ha trabajado
+                durante los últimos años y decidir si algo de eso todavía es
+                relevante o interesante para ella. "Creo que la música, para mí,
+                es un nuevo descubrimiento. Estoy redescubriendo cosas."Sí,
+                estoy volviendo a empezar. Pero no quiero descuidar las
+                canciones que tengo, así que en realidad mi idea es volver atrás
+                y escucharlo todo con nuevos oídos.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/musica-cultura.jpg" />
+            </div>
+          </article>
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="Muere">Muere Françoise Hardy</h2>
+              <p>
+                Se apaga una de las voces de la chanson francesa de los años 60.
+                Françoise Hardy, que llevaba años enferma e incluso había pedido
+                a Emmanuel Macron que legalizara la eutanasia para poder tener
+                una muerte digna, ha fallecido este 11 de junio, a los 80 años.
+                Lo ha anunciado su hijo, Thomas Dutronc, en Instagram. Hardy ha
+                sido, junto con Brigitte Bardot o Jane Birkin, fallecida hace un
+                año, uno de los grandes iconos de los años 60 en Francia y una
+                de las cantantes más célebres dentro y fuera del país. Tenía una
+                treintena de discos, fue sido musa y artista. Posó para
+                diseñadores como Yves Saint Laurent o Paco Rabanne, fue
+                retratada por fotógrafos de la talla de William Klein y Richard
+                Avedon.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/francoa.jpg" />
+            </div>
+          </article>
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="subasta">Subastan el libro más antiguo</h2>
+              <p>
+                Subastan por 3,9 millones de dólares en Londres el libro más
+                antiguo de la historia. El códice Crosby-Schøyen, uno de los
+                libros más antiguos del mundo escrito en egipcio copto, se
+                subastó este martes en la casa Christie's de Londres por 3,06
+                millones de libras (3,63 millones de euros o 3,9 millones de
+                dólares), en torno a su precio máximo estimado. Una colección de
+                textos litúrgicos cristianos escritos en copto, presentada por
+                Christie's como "uno de los libros más antiguos que existen".
+                Este manuscrito subastado en Londres, bajo el nombre de Códice
+                Crosby-Schøyen, es también el libro más antiguo perteneciente a
+                una colección privada. Compuesto por 51 hojas, de las 68 que
+                constituían el libro original, cada página contiene entre 11 y
+                18 líneas escritas a dos columnas, por un solo copista. El
+                manuscrito fue descubierto y adquirido a principios de los años
+                1950 en Egipto por un coleccionista suizo, Martin Bodmer, antes
+                de cambiar de manos varias veces durante las décadas siguientes.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/codiceviejo.jpg" />
+            </div>
+          </article>
+        </section>
+
+        <!-- --------------- DEPORTES --------------- -->
+
+        <section class="sectarticulos3">
+          <article class="articarticulos3">
+            <h1 id="noticias-deportivas">Noticias Deportivas</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#fatima"> 
+                    <div class="noticia1d noticiasecundaria swiper1">
+                      <h2>Fátima Diame emerge donde antes se hundía.</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#relevos"> 
+                    <div class="noticia2d noticiasecundaria swiper1">
+                      <h2>
+                        Los relevos lideran la velocidad española en los Europeos de
+                        atletismo
+                      </h2>
+                    </div>  
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#berlin"> 
+                    <div class="noticia3d noticiasecundaria swiper1">
+                      <h2>Berlín, sede del debut de La Roja en la Eurocopa</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#jordan"> 
+                    <div class="noticia4d noticiasecundaria swiper1">
+                      <h2>
+                        Jordan Díaz, campeón de Europa en triple salto con una marca de
+                        18,18 m
+                      </h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#valencia"> 
+                    <div class="noticia5d noticiasecundaria swiper1">
+                      <h2>El Valencia oficializa el fichaje de Dimitrievski</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#donde"> 
+                    <div class="noticia6d noticiasecundaria swiper1">
+                      <h2>Donde nace el Danubio, lujo para la expedición de la Roja</h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination artpag3"></div>
+            </div>
+          </article>
+          <!-- ---------------------- ARTICULOS DEPORTE ---------------------- -->
+           <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="fatima">Fátima Diame emerge donde antes se hundía.</h2>
+              <p>
+                Larissa Iachipino, la italiana que ya se ha asomado a los siete metros (6,97m) con solo 21 años, se metió de un salto en la final de longitud. Como la portuguesa Agate de Sousa. Y como la alemana Malaika Mihambo, campeona, olímpica, mundial y europea, la que lo logró con más suficiencia, un vuelo relajado hasta los 7,03 metros a pesar de tener viento en contra (-1.3m/s), la mejor marca europea del año y la segunda del mundo. 
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/fatima-deportes.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="relevos">Los relevos lideran la velocidad española</h2>
+              <p>
+                Tres de los cuatro relevos españoles se clasificaron para la final del miércoles, y dos de ellos eran de mujeres, el 4x100 (43s, séptimo tiempo de las ocho finalistas) y el 4x400 (cuarto). A ellas se suma el largo de hombres (cuarto). El 4x100, integrado por los atletas más jóvenes, y sin el más rápido de todos, Guillem Crespí (sexto en la final de 100m con 10,18s), lesionado, es un grupo en proceso de compenetración en las manos sabias del jefe de todo esto, Toni Puig, falló en los cambios de testigo y quedó eliminado.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/atletismo-deportes.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="berlin">Berlín, sede del debut de La Roja</h2>
+              <p>Los más de diez mil aficionados españoles que han acudido a Berlín para apoyar a la Selección en su estreno en la Eurocopa frente a Croacia se han hecho sentir en los prolegómenos al partido.
+                <br>
+                <br>
+                En las inmediaciones de la Puerta de Brandenburgo, centro neurálgico de la capital germana y sede de la Zona Aficionados instalada en la ciudad, una gran colonia de hinchas ataviados con la rojigualda expanden sus gritos de aliento al combinado nacional, ante la atenta mirada de los incondicionales croatas.</p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/eurocopa-deportes.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="jordan">Jordan Díaz, campeón de Europa</h2>
+              <p> El español Jordan Alejandro Díaz se llevó el oro en triple salto del Europeo, este martes en Roma, batiendo el récord de su país y estableciendo la tercera mejor marca mundial, con 18,18 metros.
+                <br>
+                Sólo el británico Jonathan Edwards (18,29 m) y el estadounidense Christian Taylor (18,21 m) habían saltado más lejos en el pasado que el atleta español de 23 años.
+                <br>
+                "Fue una competición de ensueño, no soy consciente de lo que he hecho, no he visto nada, pero sé que ha sido algo increíble", confesaba Jordan Díaz al término de su éxito. "Ver a Pichardo saltar 18 metros me motivó a saltar aún más lejos, porque nadie viene a estos campeonatos para terminar segundo o tercero"./p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/jordan.diaz-deportes.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="valencia">Fichaje de Dimitrievski</h2>
+              <p>
+                El Valencia CF ha hecho oficial a través de un comunicado el fichaje de Stole Dimitrievski hasta junio de 2026. El guardameta macedonio reforzará la portería de Mestalla y se incorporará al trabajo el próximo 5 de julio, donde será presentado oficialmente como nuevo jugador valencianista.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/valencia-deportes.jpg" />
+            </div>
+          </article>
+          <!-- articulo -->
+          <article class="noticiasart">
+            <div class="textnotart">
+              <h2 id="donde">Expedición de la Roja</h2>
+              <p>
+                Entre relojes cuco y pasteles Selva Negra, rodeado de más clásica vegetación alemana, verde y húmeda, que avisa la llegada del verano, se cuela un toro rojo de cerámica custodiado por dos banderas españolas. Su precio, 1.500 euros, un regalo homenaje de Donaueschingen para agasajar a la selección española. Allí, en el complejo Der Öschberghof, descansará la Roja durante su estadía en la Eurocopa de Alemania.
+              </p>
+            </div>
+            <div class="imgnotart">
+              <img class="dentro" src="img/selecion-deportes.jpg" />
+            </div>
+          </article>
+        </section>
+
+      </section>
+      <aside>
+        <div class="anuncio anuncio--vertical">
+            <div class="anuncio__miniatura">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4a66f333332919.56a84344447ec.jpg" alt="" class="anuncio__img">
+            </div>
+        </div>
+        <div class="anuncio anuncio--horizontal">
+            <div class="anuncio__miniatura">
+                <img src="https://miro.medium.com/v2/resize:fit:1050/1*DcJz6l8JXZ7bV0SgW36MNg.jpeg" alt="" class="anuncio__img">
+            </div>
+        </div>
+    </aside>
+    </main>
+    <footer>
+      <nav class="nav-bar nav-bar--footer">
+          <div class="logo logo--footer">
+              <img src="img/LOGO PUNTO DE VISTA.png" alt="" class="logo__icon">
+          </div>
+          <div class="subscribe">
+              <div class="subscribe__content">
+                  <h5 class="subscribe__title">¡Subcribete para no perderte nada!<h5>
+                  <p class="subscribe__text">Ya contamos con más de 10 mil lectores mensuales, todos bien informados</p>
+              </div>
+              <form class="suscribe__form">
+                  <input type="email" name="correo" id="correo" class="subscribe__input">
+                  <input type="submit" value="Suscribirse" class="subscribe__btn">
+              </form>
+          </div>
+          <div class="nav-bar__container">
+              <div class="social-media social-media--horizontal">
+                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+          </div>
+      </nav>
+  </footer>
+  <script src="clima.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: { delay: 3000, pauseOnMouseEnter: true },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
