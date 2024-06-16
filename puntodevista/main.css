@@ -299,39 +299,60 @@ header .fa-brands {
   width: 33%;
 }
 @media (max-width: 800px) {
+  .nav-bar {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar__container {
+    width: max-content;
+  }
+  .logo {
+    width: max-content;
+    justify-self: center;
+  }
+  .social-media {
+  width: 10%;
+  }
   .logo__icon {
     height: 90px;
     position: relative;
+    vertical-align: center;
     top: 0.3rem;
   }
   .social-media {
     display: flex;
     align-self: last baseline;
     padding-bottom: 0.4rem;
-    display: none;
+    visibility: hidden;
   }
   header .fa-brands {
     font-size: 1.2rem;
   }
+  #reloj {
+    width: min-content;
+  }
   .clima-tiempo,
   #temperatura {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .nav-bar__container {
     flex-direction: column-reverse;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
   }
   #icon {
-    width: max-content;
+    /* width: max-content; */
+    display: none;
   }
   .weather {
-    padding: 0;
+    padding: .3rem 0;
     border: none;
     flex-direction: row;
+    justify-content: center;
+    width: 38px;
   }
   .date {
-    border-top: 2px solid;
+    border-top: 1px solid;
     padding: 0;
     padding-top: 0.3rem;
   }
@@ -680,6 +701,9 @@ hr {
   .swiper-button-prev {
     display: none;
   }
+  .card {
+    height: 19rem;
+  }
 }
 /* ---------- COLORES POR CATEGORIAS ---------- */
 
@@ -775,5 +799,14 @@ hr {
 @media (max-width: 600px) {
   .noticiaprincipalpolitica {
     height: 20rem;
+  }
+}
+/* ESTEBAN */
+@media(max-width:800px) {
+  .todosart  .articarticulos1,
+  .todosart  .articarticulos2,
+  .todosart  .articarticulos3,
+  .todosart  .articarticulos4{
+    width: 90%;
   }
 }
