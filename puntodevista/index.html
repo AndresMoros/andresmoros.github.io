@@ -58,13 +58,13 @@
                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-twitter"></i></a>
                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-youtube"></i></a>
              </div>
-             <div id="menu">
+             <div id="menu" class="hide">
                 <div id="menu-bar" onclick="menuOnClick()">
                   <div id="bar1" class="bar"></div>
                   <div id="bar2" class="bar"></div>
                   <div id="bar3" class="bar"></div>
                 </div>
-                <div class="nav" id="nav">
+                <div class="nav hide" id="nav">
                   <ul>
                     <li><a href="index.html">Incio</a></li>
                     <li><a href="politica.html">Política</a></li>
@@ -74,7 +74,7 @@
                   </ul>
                 </div> 
               </div>
-              <div class="menu-bg" id="menu-bg"></div>
+              <div class="menu-bg hide" id="menu-bg"></div>
              <div class="categories">
                  <a href="index.html" class="category category--index">Incio</a>
                  <a href="politica.html" class="category category--politica">Política</a>
@@ -543,12 +543,24 @@ prevEl: '.swiper-button-prev',
 <script src="clima.js"></script>
 <script src="index.js"></script>
 <script src="top.js"></script>
-<script>
-    function menuOnClick() {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var altoVentana = $('.hide').css('height').replace("px","");//usa este para que desaparezca despues de pasar el alto del div
+	var altoVentana = 0;
+	var posicionVentana = document.querySelector(".hide").offsetTop;
+	$(window).scroll(function(event){
+		var posicionScroll = $(this).scrollTop();
+	   	if (posicionScroll > (parseInt(posicionVentana)+parseInt(altoVentana))){
+	    	$(".hide").css("display","none");
+	   	} else {
+	    	$(".hide").css("display","");
+            // menuOnClick();
+            // return;
+	   	}
+	});
+});
 </script>
 </body>
 
