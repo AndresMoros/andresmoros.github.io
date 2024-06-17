@@ -1,10 +1,4 @@
-Paleta 1
-Politica: https://www.colorhunt.co/palette/0926351b42425c83749ec8b9
-Deporte: https://www.colorhunt.co/palette/00676940a5789dde8be6ff94
-Sociedad: https://www.colorhunt.co/palette/b2b377d2d180e5e483f1f5a8
-Cultura: https://www.colorhunt.co/palette/d8efd395d2b355ad9bf1f8e8
-
-Paleta 2
+Paleta:
 Política: https://www.colorhunt.co/palette/2d32504247697077a1f6b17a
 Deporte: https://paletton.com/#uid=1000u0kuiiUvNtru4nlwudexs7O
 Sociedad: https://www.colorhunt.co/palette/fa7070fefdedc6ebc5a1c398
