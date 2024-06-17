@@ -818,7 +818,7 @@ hr {
 
 .change-bg {
   width: 200vh;
-  height: 100vh;
+  height: 200vh;
   transform: translate(0, 0);
 }
 @media (max-width: 800px) {

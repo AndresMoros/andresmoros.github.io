@@ -52,5 +52,5 @@ function menuOnClick() {
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
     document.getElementById("menu").classList.toggle("center");
-    document.body.classList.add('block-scroll')    
+    document.body.classList.toggle('block-scroll');
 }
