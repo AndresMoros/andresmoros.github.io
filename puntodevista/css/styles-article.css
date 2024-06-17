@@ -136,6 +136,7 @@ iframe{
     margin:10px auto;
     display: block;
     border-radius: 15px;
+    width: 500px;
 }
 
 .textoborder{
@@ -192,11 +193,10 @@ iframe{
     padding: 15px;
  }
 
-/* iframe{
+iframe{
    width: 90%;
-   margin-left: 20px;
     
-} */
+}
 
 
 }

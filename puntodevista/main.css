@@ -1,63 +1,3 @@
-/* 
-:                                                                               
-.                                                                               
-.                                  ..:----::.                                   
-.                            .=**###############*+:                             
-.                         -*#########################=                          
-.                      .*##########*++=====+*##########*:                       
-.                    .*########=.               -*#######*-                     
-.                   *######*-                    .*########*.                   
-.                 -*########=                :*@@@@@@%#######=                  
-.                +############-          .#@@@@@@@@@@@@%######*                 
-.               =#####+.+#######:     +@@@@@@@@@@@@@@@@@@######+                
-.              -#####*    +######*:%@@@@@@@@@@@@@@@@@@@@#:+#####=               
-.              *####*       *#######@@@@@@@@@@@@@@@@@%     +#####.              
-.             =#####.        :*#######@@@@@@@@@@@@@@%       *####+              
-.             #####+           :*#######*-=-*@@@@@@*        -#####.             
-.            .#####-            *########## =@@@@@+         .#####-             
-.            :#####:           -@@@+########@@@@+           .*####=             
-.            :#####:           @@@+*@########%*             .*####=             
-.            .#####-          #@@# #@*=#######*.            :#####:             
-.             *####+         -@@@.  -%@@%#######+           =#####              
-.             -#####:        @@@*   %@@@*-%#######=        .#####=              
-.              *#####.      #@@@     ==:%@@#=#######-      *####*               
-.              .*####*.     #@@          +*.  =######*:   *#####-               
-.               :######.                        *#######=*#####=                
-.                :*#####+  ++++++++++++++++++=    +###########-                 
-.                 .+######=                        .*#######*.                  
-.                   =#######*:                    :*#######+                    
-.                     =*########=:.           :=*########=                      
-.                       :*############****#############-                        
-.                          =*######################*+                           
-.                              :=*############*+-.                              
-.                                                                               
-.                                                                               
-.                                                                               
-.                                                                               
-.                                                                               
-.             @@@@@#:    =@@@@%-       :@@%  @@@   :%@@@@=  %@@@@@@.            
-.             @@@@@@@*  *@@@%@@@=      :@@@+ @@@  -@@@@@@@+ #@@@@@%             
-.             @@@ .@@@:.@@@  -@@#      :@@@@:@@@  #@@= .@@@   @@@               
-.             @@@  #@@=-@@@  :@@%      :@@%@%*@@  @@@:  @@@.  @@@               
-.             @@@  #@@-:@@@  -@@%      :@@%+@@@@  %@@-  @@@   @@@               
-.             @@@-*@@%  @@@*:#@@+      :@@#.%@@@  +@@#:#@@#   @@@               
-.             @@@@@@@    %@@@@@%       :@@# =@@@   #@@@@@%    @@@               
-.             ===-:        +*=          ==-  ===     =*+.     -==               
-.                                                                               
-.                                                                               
-.               :@@@@@@#  :%@@@#   =@@% =@@*   .%@@@= *@@= #@@=                 
-.               :@@@@@@# +@@@@@@%  =@@% =@@*  +@@@@@= *@@= #@@=                 
-.                 :@@%   @@@. #@@+ =@@% =@@* :@@@.    *@@= #@@=                 
-.                 :@@%  -@@@  +@@# =@@% =@@* +@@#     *@@@@@@@=                 
-.                 :@@%  :@@@  +@@# =@@% =@@* +@@%     *@@%+@@@=                 
-.                 :@@%   @@@- %@@= =@@@ +@@* .@@@+  : *@@= #@@=                 
-.                 :@@%   :@@@@@@#   %@@@@@@-  -@@@@@= *@@= #@@=                 
-.                 .##*     =@@#:     -%@@*      +@@%. =##- +##-                 
-.                                                                               
-.                                                                               
-.                                                                               
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -96,7 +36,7 @@
   --primary-font: "Montserrat", sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 /* LOADER */
 .preload img {
@@ -133,25 +73,27 @@ html {
   }
 }
 .cover {
-  min-width: 100vw;
-  min-height: 110vh;
-  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eaeaea;
+  position: fixed;
   z-index: 9;
-  position: absolute;
   /* background-image: url(img/ppperspective.svg); */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: unset;
+  /* background-size: unset; */
   animation: fadeIn 2s /*infinite*/ forwards;
   animation-delay: 1s;
-  scrollbar-width: 0;
 }
 /*  FIN LOADER */
 /* ---------------------------------------- GENERALES ---------------------------------------- */
 body {
   font-family: var(--primary-font);
   overflow-x: hidden;
+}
+.block-scroll {
+  overflow: hidden;
 }
 .container {
   max-width: 1400px;
@@ -312,19 +254,13 @@ header .fa-brands {
     justify-self: center;
   }
   .social-media {
-  width: 10%;
+    display: none;
   }
   .logo__icon {
     height: 90px;
     position: relative;
     vertical-align: center;
     top: 0.3rem;
-  }
-  .social-media {
-    display: flex;
-    align-self: last baseline;
-    padding-bottom: 0.4rem;
-    visibility: hidden;
   }
   header .fa-brands {
     font-size: 1.2rem;
@@ -342,7 +278,7 @@ header .fa-brands {
     display: none;
   }
   .weather {
-    padding: .3rem 0;
+    padding: 0.3rem 0;
     border: none;
     flex-direction: row;
     justify-content: center;
@@ -358,7 +294,7 @@ header .fa-brands {
     font-size: 0.8rem;
   }
 }
-@media(max-width:500px) {
+@media (max-width: 500px) {
   .clima-tiempo,
   #temperatura {
     font-size: 0.5rem;
@@ -553,7 +489,7 @@ header .fa-brands {
 hr {
   visibility: hidden;
 }
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   hr {
     visibility: visible;
   }
@@ -568,7 +504,7 @@ hr {
       #ffffff12 35%
     ),
     url(https://imagenes.elpais.com/resizer/v2/GCOUAYTXFVHINCCRHFRUMDQUFQ.jpg?auth=85d581494d85ad4a677b13d5848af903af72a420e378d4b233d526c5a7cb7514&width=1200); */
-    background-image: url(https://imagenes.elpais.com/resizer/v2/GCOUAYTXFVHINCCRHFRUMDQUFQ.jpg?auth=85d581494d85ad4a677b13d5848af903af72a420e378d4b233d526c5a7cb7514&width=1200);
+  background-image: url(https://imagenes.elpais.com/resizer/v2/GCOUAYTXFVHINCCRHFRUMDQUFQ.jpg?auth=85d581494d85ad4a677b13d5848af903af72a420e378d4b233d526c5a7cb7514&width=1200);
 }
 .main-new-deporte .main-new__content {
   background: #fff;
@@ -818,17 +754,18 @@ hr {
 
 .nav ul {
   padding: 0 22px;
+  gap: 30rem;
 }
 
 .nav li {
   list-style: none;
   padding: 12px 0;
-  text-align: right;
+  text-align: center;
 }
 
 .nav li a {
   color: white;
-  font-size: 20px;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
@@ -836,7 +773,7 @@ hr {
   font-weight: bold;
 }
 
-.menu-bg, #menu {
+.menu-bg {
   top: 0;
   right: 0;
   position: absolute;
@@ -846,16 +783,23 @@ hr {
   z-index: 2;
   width: 0;
   height: 0;
-  margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, var(--brand-color), var(--brand-color));
-  border-radius: 50%;
+  background: var(--brand-color);
   transition: 0.3s ease;
 }
 
 .change {
   display: block;
 }
-
+.center {
+  display: flex;
+  top: 1rem;
+  scale: 0.8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0;
+}
 .change .bar {
   background-color: white;
 }
@@ -873,18 +817,18 @@ hr {
 }
 
 .change-bg {
-  width: 360px;
-  height: 460px;
-  transform: translate(50%, -18%);
+  width: 200vh;
+  height: 100vh;
+  transform: translate(0, 0);
 }
-@media(max-width:800px) {
+@media (max-width: 800px) {
   header .categories {
     display: none;
   }
   #menu {
     display: inline-block;
     top: 1rem;
-    scale: .8;
+    scale: 0.8;
   }
 }
 /* ------------------ OTROS ------------------ */
@@ -912,11 +856,11 @@ hr {
   }
 }
 /* ESTEBAN */
-@media(max-width:800px) {
-  .todosart  .articarticulos1,
-  .todosart  .articarticulos2,
-  .todosart  .articarticulos3,
-  .todosart  .articarticulos4{
+@media (max-width: 800px) {
+  .todosart .articarticulos1,
+  .todosart .articarticulos2,
+  .todosart .articarticulos3,
+  .todosart .articarticulos4 {
     width: 90%;
   }
 }

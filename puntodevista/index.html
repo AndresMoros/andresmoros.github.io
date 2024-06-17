@@ -13,23 +13,25 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!--Estilos generales para TODAS las páginas-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-<link rel="manifest" href="img/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="main.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 <body>
     <div class="preload"><img src="img/LOGO PUNTO DE VISTA.png" alt=""></div>
@@ -58,13 +60,13 @@
                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-twitter"></i></a>
                  <a href="#" class="social-media__anchor"><i class="fa-brands fa-youtube"></i></a>
              </div>
-             <div id="menu" class="hide">
+             <div id="menu" class="">
                 <div id="menu-bar" onclick="menuOnClick()">
                   <div id="bar1" class="bar"></div>
                   <div id="bar2" class="bar"></div>
                   <div id="bar3" class="bar"></div>
                 </div>
-                <div class="nav hide" id="nav">
+                <div class="nav" id="nav">
                   <ul>
                     <li><a href="index.html">Incio</a></li>
                     <li><a href="politica.html">Política</a></li>
@@ -74,7 +76,7 @@
                   </ul>
                 </div> 
               </div>
-              <div class="menu-bg hide" id="menu-bg"></div>
+              <div class="menu-bg" id="menu-bg"></div>
              <div class="categories">
                  <a href="index.html" class="category category--index">Incio</a>
                  <a href="politica.html" class="category category--politica">Política</a>
@@ -543,25 +545,6 @@ prevEl: '.swiper-button-prev',
 <script src="clima.js"></script>
 <script src="index.js"></script>
 <script src="top.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	var altoVentana = $('.hide').css('height').replace("px","");//usa este para que desaparezca despues de pasar el alto del div
-	var altoVentana = 0;
-	var posicionVentana = document.querySelector(".hide").offsetTop;
-	$(window).scroll(function(event){
-		var posicionScroll = $(this).scrollTop();
-	   	if (posicionScroll > (parseInt(posicionVentana)+parseInt(altoVentana))){
-	    	$(".hide").css("display","none");
-	   	} else {
-	    	$(".hide").css("display","");
-            // menuOnClick();
-            // return;
-	   	}
-	});
-});
-</script>
 </body>
 
 </html>
