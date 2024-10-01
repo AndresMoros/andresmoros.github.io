@@ -1,9 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
+  <!-- HEADER opening -->
+  <header>
+  </header>
+  <!-- HEADER closing -->
+  <!-- BODY opening -->
   <body>
-    <a href='https://andresmoros.github.io/repository/inmoconexion/'>Punto de Vista</a>
+    <div class="container">
+        <aside>
+            <div class="personal-info">
+                <div class="personal-info__header">
+                    <p class="personal-info__name">Andrés Moros</p>
+                    <p class="personal-info__sub-text">Beginner Front-End Developer</p>
+                </div>
+                <hr class="separator --small-separator">
+                <div class="personal-info__interest">
+                    <div class="personal-info__curriculum">
+                        <span class="personal-info__title">Curriculum</span>
+                        <span class="personal-info__item --html-item">
+                            <i class="fa-brands fa-html5"></i>
+                            HTML
+                        </span>
+                        <span class="personal-info__item --css-item">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS
+                        </span>
+                        <span class="personal-info__item --js-item">
+                            <i class="fa-brands fa-js"></i>
+                            JavaScript
+                        </span>
+                        <span class="personal-info__item --wordpress-item">
+                            <i class="fa-brands fa-wordpress"></i>
+                            WordPress
+                        </span>
+                    </div>
+                    <div class="personal-info__network">
+                        <span class="personal-info__title">Networks</span>
+                        <a href="https://www.linkedin.com/in/andr%C3%A9s-moros-8905802aa/" target="_blank" class="personal-info__item --linkedin-item">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="personal-info__training">
+                        <span class="personal-info__title">Courses & Education</span>
+                        <a href="https://www.freecodecamp.org/certification/AndresMoros/responsive-web-design" target="_blank" class="personal-info__item">
+                            Responsive Web Design - freeCodeCamp
+                            <i class="fa-brands fa-free-code-camp"></i>
+                        </a>
+                        <a href="/docs/IFCM018PO PROGRAMACIÓN DE APLICACIONES ANDROID.pdf" target="_blank" class="personal-info__item">
+                            IFCM018PO Programación de Aplicaciones Android</a>
+                        <a href="https://todofp.es/buscadorcertificados/fichaCP?codCertificado=IFCD0110#:~:text=Nivel%202%20C%C3%B3digo%20IFCD0110%20Confecci%C3%B3n%20y" target="_blank" class="personal-info__item">IFCD0110 Confección y publicación de páginas web (in process)</a>
+                            
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="large-title">
+                <h1 class="large-title__text">
+                    Some projects
+                </h1>
+            </div>
+            <div class="deck">
+                 <!-- PROJECT -->
+                <div class="card">
+                    <div class="card__header">
+                        <div class="card__title">
+                            Punto de Vista
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__thumbnail --inmoconexion">
+                            <img src="/img/projects/puntodevista/punto-de-vista-mockup.png" alt="">
+                        </div>
+                        <p class="card__description">
+                            “Punto de Vista” is a newspaper whose mission is to provide unbiased and truthful news on various topics. The site is built entirely with HTML, CSS and JavaScript, with the implementation of the <a href="https://swiperjs.com/" target="_blank">SwiperJS</a> library.
+                            <br>
+                            <br>
+                            It is worth mentioning that this project was done as a group, my complete participation was the <span>index.html</span>, <span>index.js</span> and <span>main.css</span> files.
+                        </p>
+                    </div>
+                    <div class="card__footer">
+                        <a class="btn --right-btn" href="https://andresmoros.github.io/repository/puntodevista/" target="_blank" rel="noopener noreferrer">Open project</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <div class="card__title">
+                            Inmoconexión
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__thumbnail --inmoconexion">
+                            <img src="/img/projects/inmoconexion/inmoconexion-mockup.png" alt="">
+                        </div>
+                        <p class="card__description">
+                            "Inmoconexión" is a user-friendly fictitious real estate platform built with HTML and CSS. Whether you're on a computer or a smartphone, our responsive design (using media queries) makes finding your dream home a breeze.
+                        </p>
+                    </div>
+                    <div class="card__footer">
+                        <a class="btn --right-btn" href="https://andresmoros.github.io/repository/inmoconexion/" target="_blank" rel="noopener noreferrer">Open project</a>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div class="card">
+                    <div class="card__header">
+                        <div class="card__title">
+                            Mara Design
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__thumbnail --inmoconexion">
+                            <img src="/img/projects/maradesign/maradesing-mockup.png" alt="">
+                        </div>
+                        <p class="card__description">
+                            "Mara Design" is a digital marketing agency specializing in website development and design. The website utilizes card concepts, flex-model, responsive design, and it's built as a landing page. It is entirely built using HTML and CSS.
+                        </p>
+                    </div>
+                    <div class="card__footer">
+                        <a class="btn --right-btn" href="https://andresmoros.github.io/repository/maradesign/" target="_blank" rel="noopener noreferrer">Open project</a>
+                    </div>
+                </div>
+            </div>
+            <p class="legend">You can read all the documentation of these projects by clicking <a href="https://github.com/AndresMoros/repository" target="_blank">here</a> and selecting the corresponding folder.</p>
+        </main>
+    </div>
+    <!-- <a href='https://andresmoros.github.io/repository/inmoconexion/'>Inmoconexión</a> -->
   </body>
+  <footer>
+  </footer>
 </html>

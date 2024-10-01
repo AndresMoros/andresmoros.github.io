@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    /* colors */
+    --dark-navy-color: #161A30;
+    --navy-color: #31304D;
+    --grey-color: #B6BBC4;
+    --font-color: #F0ECE5;
+    /* https://colorhunt.co/palette/161a3031304db6bbc4f0ece5 */
+    --contrast-color: #F05454;
+    --alternative-navy: #30475E;
+}
+body {
+    background: var(--navy-color);
+}
+aside {
+    background: var(--dark-navy-color);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* ------ GENERAL STYLES ------ */
+.separator {
+    height: .3rem;
+    margin: .5rem 0 .3rem;
+    background-color: var(--alternative-navy);
+    border: none;
+}
+.--small-separator {
+    width: 6rem;
+}
+.btn {
+    color: var(--contrast-color);
+    padding: .5rem;
+    background: var(--dark-navy-color);
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: monospace;
+}
+/* ------ NAME AND SUBTITLE ------ */
+.personal-info {
+    padding: .5rem;
+}
+.personal-info__header {
+    color: var(--font-color);
+    padding: .8rem 0 .2rem;
+}
+.personal-info__name {
+    margin-bottom: .3rem;
+    font-size: 2.5rem;
+}
+.personal-info__sub-text {
+    font-style: italic;
+}
+/* ------ TECHNOLOGIES AND SOCIAL MEDIA ANCHORS ------ */
+.personal-info__interest {
+    display: flex;
+    flex-direction: column;
+}
+.personal-info__curriculum,
+.personal-info__network,
+.personal-info__training {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+.personal-info__title {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-bottom: .3rem;
+}
+.personal-info__item {
+    transition: 300ms;
+    color: var(--font-color);
+    text-decoration: none;
+    background-color: var(--navy-color);
+    padding: .3rem;
+    margin: .3rem;
+    border-radius: 10px;
+}
+.--html-item:hover > i {
+    color: #F56225;
+}
+.--css-item:hover > i {
+    color: #4e7cfc;
+}
+.--js-item:hover > i {
+    color: #F5DC1D;
+}
+.--wordpress-item:hover > i {
+    color: #63b0ce;
+} 
+.--linkedin-item:hover > i {
+    color: #0A66C2;
+}
+/* ------ PROJECTS ------ */
+.large-title {
+    padding: 1rem;
+    padding-bottom: 0;
+    color: var(--font-color);
+}
+.large-title__text {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.legend {
+    text-align: center;
+    font-size: .7rem;
+    margin-top: .5rem;
+    color: var(--font-color);
+    margin: 0 auto 3rem;
+}
+.legend a {
+    color: var(--contrast-color);
+
+}
+/* ------ PROJECTS CONTAINER ------ */
+.deck {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+.card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--font-color);
+}
+.card__title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.card__description a,
+.card__description span{
+    color: var(--contrast-color);
+    font-family: monospace;
+}
+.card__thumbnail {
+    margin-bottom: .5rem;
+}
+.card__thumbnail img {
+    width: 100%;
+}
+.card__footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* ------ RESPONSIVE ------ */
+
+/* for tablets */
+
+@media(min-width:800px) {
+    .container {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+    }
+}
+
+/* for desktop */
+@media(min-width:1000px) {
+    .deck {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
